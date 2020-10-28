@@ -3,7 +3,7 @@ session_start();
 $username = "";
 $email    = "";
 $errors = array(); 
-$db = mysqli_connect('localhost', 'root', '', 'registration');
+$db = mysqli_connect('localhost', 'root', 'mysql', 'registration');
 if (isset($_POST['reg_user'])) {
   $username = mysqli_real_escape_string($db, $_POST['username']);
   $email = mysqli_real_escape_string($db, $_POST['email']);
